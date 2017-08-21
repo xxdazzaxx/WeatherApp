@@ -23,16 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfX-iP-vKH">
-                                <rect key="frame" x="115" y="20" width="146" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="83" y="20" width="208" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Example: Paris" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9kr-Zj-L3f">
-                                <rect key="frame" x="84" y="82" width="208" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="208" id="OEu-pf-Dh5"/>
-                                </constraints>
+                                <rect key="frame" x="84" y="95" width="208" height="37"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -41,10 +38,13 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGe-IX-KA1">
-                                <rect key="frame" x="118" y="136" width="140" height="42"/>
+                                <rect key="frame" x="105" y="166" width="165" height="42"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="9PH-IW-qlg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Get Weather">
+                                <state key="normal" title="  Get Weather  ">
                                     <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -52,31 +52,42 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather is: Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-By-pgf">
-                                <rect key="frame" x="16" y="285" width="344" height="21"/>
+                                <rect key="frame" x="7" y="523" width="344" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature is: 32" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pce-AM-bCZ">
-                                <rect key="frame" x="71" y="242" width="233" height="24"/>
+                                <rect key="frame" x="71" y="245" width="233" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="382556-weather-forecast" translatesAutoresizingMaskIntoConstraints="NO" id="jMM-bt-4nD">
+                                <rect key="frame" x="71" y="292" width="240" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="199" id="5wh-th-Ngc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="0.88233090753424659" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9kr-Zj-L3f" firstAttribute="centerX" secondItem="FfX-iP-vKH" secondAttribute="centerX" id="21C-mJ-P3t"/>
-                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="centerX" secondItem="zGe-IX-KA1" secondAttribute="centerX" id="6vG-pG-Qpi"/>
-                            <constraint firstItem="i1G-By-pgf" firstAttribute="top" secondItem="Pce-AM-bCZ" secondAttribute="bottom" constant="19" id="BJS-7d-y4e"/>
-                            <constraint firstItem="9kr-Zj-L3f" firstAttribute="top" secondItem="FfX-iP-vKH" secondAttribute="bottom" constant="32" id="RuN-Lf-HbS"/>
-                            <constraint firstItem="zGe-IX-KA1" firstAttribute="centerX" secondItem="9kr-Zj-L3f" secondAttribute="centerX" id="Rwq-QU-KGI"/>
-                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="top" secondItem="zGe-IX-KA1" secondAttribute="bottom" constant="64" id="jbJ-eM-uX5"/>
-                            <constraint firstItem="i1G-By-pgf" firstAttribute="centerX" secondItem="Pce-AM-bCZ" secondAttribute="centerX" id="pxL-4i-QzH"/>
-                            <constraint firstItem="zGe-IX-KA1" firstAttribute="top" secondItem="9kr-Zj-L3f" secondAttribute="bottom" constant="24" id="pxi-N9-F9F"/>
-                            <constraint firstItem="i1G-By-pgf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="slE-RL-gC5"/>
+                            <constraint firstItem="jMM-bt-4nD" firstAttribute="top" secondItem="Pce-AM-bCZ" secondAttribute="bottom" constant="23" id="1tu-SP-gGB"/>
+                            <constraint firstItem="i1G-By-pgf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-9" id="7cs-sN-IsI"/>
+                            <constraint firstItem="9kr-Zj-L3f" firstAttribute="centerX" secondItem="zGe-IX-KA1" secondAttribute="centerX" id="B07-RS-kA5"/>
+                            <constraint firstItem="9kr-Zj-L3f" firstAttribute="top" secondItem="FfX-iP-vKH" secondAttribute="bottom" constant="32" id="CDW-tF-DuY"/>
+                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="top" secondItem="zGe-IX-KA1" secondAttribute="bottom" constant="37" id="I0r-Qw-1R6"/>
+                            <constraint firstItem="zGe-IX-KA1" firstAttribute="top" secondItem="9kr-Zj-L3f" secondAttribute="bottom" constant="34" id="MXI-cg-Jxk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i1G-By-pgf" secondAttribute="trailing" constant="8" id="MhC-k5-bwJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="i1G-By-pgf" secondAttribute="bottom" constant="123" id="T6B-ZS-ioR"/>
+                            <constraint firstItem="jMM-bt-4nD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="292" id="YEi-Jx-sPx"/>
+                            <constraint firstItem="zGe-IX-KA1" firstAttribute="centerX" secondItem="Pce-AM-bCZ" secondAttribute="centerX" id="Yhc-ol-kqm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jMM-bt-4nD" secondAttribute="trailing" constant="48" id="dd5-Fz-p02"/>
+                            <constraint firstItem="9kr-Zj-L3f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="ioa-sx-aCA"/>
+                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="leading" secondItem="jMM-bt-4nD" secondAttribute="leading" id="iqO-vI-3MM"/>
+                            <constraint firstItem="jMM-bt-4nD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="55" id="ohf-A2-O9W"/>
                             <constraint firstItem="FfX-iP-vKH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tdt-N6-hZj"/>
-                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="leading" secondItem="i1G-By-pgf" secondAttribute="trailing" constant="-289" id="vGX-qj-Ip0"/>
+                            <constraint firstItem="Pce-AM-bCZ" firstAttribute="centerX" secondItem="FfX-iP-vKH" secondAttribute="centerX" id="zlv-5R-PiG"/>
                             <constraint firstItem="FfX-iP-vKH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zzd-yv-sFE"/>
                         </constraints>
                     </view>
@@ -92,4 +103,7 @@
             <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="382556-weather-forecast" width="600" height="564"/>
+    </resources>
 </document>

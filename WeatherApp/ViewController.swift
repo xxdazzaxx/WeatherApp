@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getWeather.layer.cornerRadius = 15.0
         getWeather.isEnabled = false
         // Do any additional setup after loading the view, typically from a nib.
         
